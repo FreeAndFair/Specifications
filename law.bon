@@ -1,0 +1,13 @@
+cluster_chart LEGAL_STANDARDS
+explanation
+  "Basic legal standards generic to democratic elections."
+class LEGISLATION
+  description "A set of laws."
+end
+
+class_chart LEGISLATION
+explanation
+  "Legislation is a set of laws. In this context, it is \
+ \ the set of laws dealing with the conduct of elections."
+end
+

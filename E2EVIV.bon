@@ -1,0 +1,35 @@
+-- This E2E VIV specification is written in the EBON specification
+-- language, based upon the BON specification language from Walden and
+-- Nerson.  See http://bon-method.com/ for more information about BON
+-- and http://kindsoftware.com/ for more information about EBON.  Tool
+-- support for EBON is provided by the BON compiler, bonc, and several
+-- other tools.  See https://github.com/kiniry/BON for more
+-- information.
+
+-- Informal Charts
+
+-- BON Domain Model
+
+system_chart E2EVIV_SYSTEM
+indexing
+  author: "Joseph Kiniry <kiniry@galois.com>", "Daniel M. Zimmerman <dmz@galois.com>";
+  organization: "Galois, Inc.";
+  keywords: "OVF", "end-to-end verifiable internet voting", "e2e", "viv", 
+    "verifiable elections", "software independence", 
+    "high-assurance", "cryptography", "verification", "Galois";
+  created: "Tue Jul 15 16:18:09 PDT 2014";
+  revised: "February 2015";
+  github: "https://github.com/GaloisInc/e2eviv";
+explanation
+  "An end-to-end verifiable Internet voting system"
+cluster ELECTION_DOMAIN_MODEL
+description
+  "Core concepts generic to all elections."
+cluster LEGAL_STANDARDS
+description
+  "Basic legal standards generic to democratic elections."
+cluster PERSONAS
+description
+  "Archetypical personas for actors participating in elections."
+end
+

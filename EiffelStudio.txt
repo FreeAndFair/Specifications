@@ -1,0 +1,12 @@
+Feature requests:
+
+Bugs:
+
+- delete a class in a cluster which was not part of the system
+- re-add the same class
+- hang with ec at 100% (kill to re-enable UI)
+
+- rename class from A to B
+- attempt to rename from B to A
+- ES claims there is already a class of name A
+
