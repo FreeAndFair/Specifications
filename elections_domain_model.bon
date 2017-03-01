@@ -85,7 +85,31 @@ class VERIFIABLE_ELECTION
              \ by voters or election officials."
 cluster VOTING_METHODS
 description
-  "Voting methods commonly used in the world."
+  "The means by which a voter denotes which contest choices that they \
+ \ prefer, and the complementary means by which votes are tallied."
+end
+
+cluster_chart VOTING_SYSTEMS
+explanation
+  "Voting systems commonly used in the world."
+class HAND_MARKED
+description
+  "A paper ballot that is hand-marked by a voter to capture their \
+ \ contest choices."
+class BALLOT_MARKING_DEVICE
+description
+  "A system which permits voters to indicate their contest choices and \
+ \ then captures those voter choices on paper ballots."
+class OPTICAL_SCAN
+description
+  "A voting system that uses a digital system to automatically interpret \
+ \ voter intent from marked paper ballots."
+class DRE
+description
+  "A direct recording electronic voting system which has no VVPAT."
+class DRE_WITH_VVPAT
+description
+  "A direct recording electronic voting system which has a VVPAT."
 end
 
 cluster_chart VOTING_METHODS
@@ -149,6 +173,9 @@ class SEAL
              \ for the integrity of an object."
 class TALLY 
   description "The count of all the votes in an election."
+class HAND_COUNT
+  description "The count of all the votes in an election using no \
+             \ digital assistance in which all votes are manually counted."
 class VOTE 
   description "The expression of a contest choice."
 class VOTERS_REGISTER 
@@ -156,10 +183,20 @@ class VOTERS_REGISTER
 class VOTING_INTERFACE 
   description "The medium through which a voter makes his or \
              \ her contest choices known to the voting system."
+class USER_INTERFACE
+  description "The digital medium through which a voter or electional \
+             \ authority interacts with a digital voting system."
 cluster PHYSICAL_ARTIFACTS 
   description "Physical artifacts relevant to election day."
 cluster DIGITAL_ARTIFACTS 
   description "Digital artifacts relevant to election day."
+class RECEIPT
+  description "Any kind of artifact that is meant to provide a voter
+               evidence of a voting system's or election's correct
+               operation."
+class E2E_V_RECEIPT
+  description "A cryptographic receipt in an end-to-end verifiable
+               election system."
 end
 
 cluster_chart PHYSICAL_ARTIFACTS
@@ -179,6 +216,8 @@ class PAPER_VOTE
 class PHYSICAL_SEAL 
   description "A piece of material that serves as evidence that \
              \ a physical artifact has not been tampered with."
+class VVPAT
+  description "A voter-verifiable paper-based auditing trail."
 end
 
 cluster_chart DIGITAL_ARTIFACTS
@@ -331,6 +370,9 @@ class PERSON
   description "An individual."
 class VOTER 
   description "A person who is eligible to vote in an election."
+class ADVERSARY
+  description "A person or entity that wishes to manipulate the \
+             \ outcome of an election."
 end
 
 class_chart ACCESSIBLE
