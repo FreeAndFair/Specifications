@@ -17,10 +17,15 @@ the votes. This is done by a tally system. The purpose of this project is to
 design an open source automated tally system for FPTP elections, formally
 specified in [Z][2], implemented and verified in [SPARK][3].
 
+There are two open issues from the original [GitHub project][4]:
+ - There can be more than one winner. (#3)
+ - A "none of the above" candidate would also be a voter (#2)
+
 [0]: http://en.wikipedia.org/wiki/First_past_the_post
 [1]: http://en.wikipedia.org/wiki/Party-list_proportional_representation
 [2]: http://en.wikipedia.org/wiki/Z_notation
 [3]: http://en.wikipedia.org/wiki/SPARK_(programming_language)
+[4]: https://github.com/oleks/fptp-teller
 
 ## Licence ##
 
