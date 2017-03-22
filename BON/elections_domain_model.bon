@@ -92,6 +92,9 @@ end
 cluster_chart VOTING_SYSTEMS
 explanation
   "Voting systems commonly used in the world."
+class VOTING_SYSTEM -- all classes herein are subtypes of VOTING_SYSTEM
+description
+  "The operational means by which a voter captures their contest choices."
 class HAND_MARKED
 description
   "A paper ballot that is hand-marked by a voter to capture their \
